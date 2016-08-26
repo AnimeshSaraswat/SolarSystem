@@ -1,0 +1,142 @@
+/* Variable Declaration */
+/* SASS Declaration */
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url("../img/bg.jpg") no-repeat; }
+
+@-webkit-keyframes orbit {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+@-moz-keyframes orbit {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+@keyframes orbit {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+.ss-wrapper {
+  width: 960px;
+  margin: 0 auto;
+  position: relative; }
+  .ss-wrapper ul.solarsystem {
+    position: relative;
+    overflow: hidden;
+    height: 640px;
+    padding: 0px;
+    -webkit-transition: all 0.09s ease-in;
+    -moz-transition: all 0.09s ease-in;
+    -o-transition: all 0.09s ease-in;
+    transition: all 0.09s ease-in; }
+    .ss-wrapper ul.solarsystem li {
+      position: absolute;
+      display: block;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+      -webkit-animation-name: orbit;
+      -moz-animation-iteration-count: infinite;
+      -moz-animation-timing-function: linear;
+      -moz-animation-name: orbit;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-name: orbit;
+      border: 2px solid #888;
+      border-radius: 50%; }
+      .ss-wrapper ul.solarsystem li span {
+        display: block;
+        position: absolute;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%; }
+    .ss-wrapper ul.solarsystem .sun {
+      width: 40px;
+      height: 40px;
+      background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.22, #FDB813), color-stop(1, #ffdb70));
+      border: none;
+      -webkit-box-shadow: 0 0 50px #c90;
+      -moz-box-shadow: 0 0 50px #c90;
+      box-shadow: 0 0 50px #c90;
+      z-index: 100;
+      top: 50%;
+      left: 50%; }
+      .ss-wrapper ul.solarsystem .sun span {
+        width: 60px;
+        height: 60px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px; }
+    .ss-wrapper ul.solarsystem li.mercury {
+      width: 100px;
+      height: 100px;
+      z-index: 99;
+      top: 45%;
+      left: 47%;
+      -webkit-animation-duration: 5s; }
+      .ss-wrapper ul.solarsystem li.mercury span {
+        background-color: #d5d2d1;
+        top: 8px;
+        left: 8px;
+        width: 12px;
+        height: 12px; }
+    .ss-wrapper ul.solarsystem li.venus {
+      width: 160px;
+      height: 160px;
+      z-index: 98;
+      top: 40%;
+      left: 44%;
+      -webkit-animation-duration: 7s; }
+      .ss-wrapper ul.solarsystem li.venus span {
+        background-color: #DEB887;
+        top: 15px;
+        left: 15px;
+        width: 15px;
+        height: 15px; }
+    .ss-wrapper ul.solarsystem li.earth {
+      width: 220px;
+      height: 220px;
+      z-index: 97;
+      top: 35%;
+      left: 41%;
+      -webkit-animation-duration: 9s; }
+      .ss-wrapper ul.solarsystem li.earth span {
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.22, #28726E), color-stop(1, #B9C2AA));
+        top: 23px;
+        left: 23px;
+        width: 16px;
+        height: 16px; }
+    .ss-wrapper ul.solarsystem li.mars {
+      width: 280px;
+      height: 280px;
+      z-index: 97;
+      top: 30%;
+      left: 38%;
+      -webkit-animation-duration: 12s; }
+      .ss-wrapper ul.solarsystem li.mars span {
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.22, #d23f2f), color-stop(1, #943E0F));
+        top: 31px;
+        left: 31px;
+        width: 18px;
+        height: 18px; }
+    .ss-wrapper ul.solarsystem li.jupiter {
+      width: 340px;
+      height: 340px;
+      z-index: 97;
+      top: 25%;
+      left: 35%;
+      -webkit-animation-duration: 18s; }
+      .ss-wrapper ul.solarsystem li.jupiter span {
+        background: -webkit-linear-gradient(#857E6C, #BDAE96, #D5D8E1, #9F9756, #D4CBBA, #BA833A, #8C8C8D);
+        top: 36px;
+        left: 36px;
+        width: 25px;
+        height: 25px; }
+
+/*# sourceMappingURL=style.css.map */
