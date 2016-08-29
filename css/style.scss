@@ -1,6 +1,6 @@
 /* Variable Declaration */
 $color-white: #fff;
-$border-color: #888;
+$border-color: #3b444c;
 $text-color: #aaa;
 
 /* SASS Declaration */
@@ -87,8 +87,8 @@ to { -moz-transform: rotate(360deg) }
 	    -moz-box-shadow: 0 0 50px #c90;
 	    box-shadow: 0 0 50px #c90;
 	    z-index: 100;
-	    top: 50%;
-	    left: 50%;
+	    top: 300px;
+	    left: 315px;
 
 	    span {
   	    width: 60px;
@@ -102,8 +102,8 @@ to { -moz-transform: rotate(360deg) }
 			width: 100px;
 			height: 100px;
 			z-index: 99;
-			top: 45%;
-			left: 47%;
+			top: 270px;
+			left: 285px;
 			-webkit-animation-duration: 7s;
 
 			span {
@@ -118,8 +118,8 @@ to { -moz-transform: rotate(360deg) }
 			width: 160px;
 			height: 160px;
 			z-index: 98;
-			top: 40%;
-			left: 44%;
+			top: 240px;
+			left: 255px;
 			-webkit-animation-duration: 10s;
 
 			span {
@@ -134,8 +134,8 @@ to { -moz-transform: rotate(360deg) }
 			width: 220px;
 			height: 220px;
 			z-index: 97;
-			top: 35%;
-			left: 41%;
+			top: 210px;
+			left: 225px;
 			-webkit-animation-duration: 15s;
 
 			span {
@@ -150,8 +150,8 @@ to { -moz-transform: rotate(360deg) }
 			width: 280px;
 			height: 280px;
 			z-index: 96;
-			top: 30%;
-			left: 38%;
+			top: 180px;
+			left: 195px;
 			-webkit-animation-duration: 30s;
 
 			span {
@@ -166,8 +166,8 @@ to { -moz-transform: rotate(360deg) }
 			width: 340px;
 			height: 340px;
 			z-index: 95;
-			top: 25%;
-			left: 35%;
+			top: 150px;
+			left: 165px;
 			-webkit-animation-duration: 50s;
 
 			span {
@@ -182,8 +182,8 @@ to { -moz-transform: rotate(360deg) }
 			width: 400px;
 			height: 400px;
 			z-index: 94;
-			top: 20%;
-			left: 32%;
+			top: 120px;
+			left: 135px;
 			-webkit-animation-duration: 75s;
 
 			span {
@@ -214,8 +214,8 @@ to { -moz-transform: rotate(360deg) }
 			width: 460px;
 			height: 460px;
 			z-index: 93;
-			top: 15%;
-			left: 29%;
+			top: 90px;
+			left: 105px;
 			-webkit-animation-duration: 100s;
 
 			span {
@@ -230,8 +230,8 @@ to { -moz-transform: rotate(360deg) }
 			width: 520px;
 			height: 520px;
 			z-index: 92;
-			top: 10%;
-			left: 26%;
+			top: 60px;
+			left: 75px;
 			-webkit-animation-duration: 140s;
 
 			span {
@@ -257,6 +257,7 @@ to { -moz-transform: rotate(360deg) }
     h4:hover+p {
     	visibility: visible;
     	opacity: 0.9;	
+    	transition: all 4.5s ease-in-out;
     }
     p {
     	position: absolute;
