@@ -1,6 +1,6 @@
 /* Variable Declaration */
 $color-white: #fff;
-$border-color: #3b444c;
+$border-color: #134;
 $text-color: #aaa;
 
 /* SASS Declaration */
@@ -16,14 +16,14 @@ body {
   background-attachment: fixed;
 }
 
-@-webkit-keyframes orbit { 
-from { -webkit-transform: rotate(0deg) } 
-to { -webkit-transform: rotate(360deg) } 
+@-webkit-keyframes orbit {
+from { -webkit-transform: rotate(0deg) }
+to { -webkit-transform: rotate(360deg) }
 }
 
-@-moz-keyframes orbit { 
-from { -moz-transform: rotate(0deg) } 
-to { -moz-transform: rotate(360deg) } 
+@-moz-keyframes orbit {
+from { -moz-transform: rotate(0deg) }
+to { -moz-transform: rotate(360deg) }
 }
 
 @keyframes orbit {
@@ -46,7 +46,7 @@ to { -moz-transform: rotate(360deg) }
 	position: relative;
 	ul.solarsystem {
 		width: 960px;
-		margin: 0 auto;		
+		margin: 0 auto;
 		position: relative;
 		overflow: hidden;
 		min-height: 640px;
@@ -99,67 +99,88 @@ to { -moz-transform: rotate(360deg) }
 	    }
 		}
 		li.mercury {
-			width: 100px;
-			height: 100px;
-			z-index: 99;
-			top: 270px;
-			left: 285px;
-			-webkit-animation-duration: 7s;
+			width: 80px;
+	    height: 80px;
+	    z-index: 99;
+	    top: 280px;
+	    left: 295px;
+			-webkit-animation-duration: 5s;
 
 			span {
 				background-color: #CCCCCC;
-				top: 8px;
-				left: 8px;
+				top: 5px;
+				left: 5px;
 				width: 12px;
 				height: 12px;
 			}
 		}
 		li.venus {
-			width: 160px;
-			height: 160px;
+			width: 120px;
+			height: 120px;
 			z-index: 98;
-			top: 240px;
-			left: 255px;
-			-webkit-animation-duration: 10s;
+			top: 260px;
+			left: 275px;
+			-webkit-animation-duration: 6.76s;
 
 			span {
 				background-color: #DEB887;
-				top: 15px;
-				left: 15px;
+				top: 8px;
+				left: 8px;
 				width: 15px;
 				height: 15px;
 			}
 		}
 		li.earth {
-			width: 220px;
-			height: 220px;
+			width: 165px;
+			height: 165px;
 			z-index: 97;
-			top: 210px;
-			left: 225px;
-			-webkit-animation-duration: 15s;
+			top: 237px;
+			left: 252px;
+			-webkit-animation-duration: 7.95s;
 
 			span {
 				background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.22, #28726E), color-stop(1, #B9C2AA) );
-				top: 23px;
-				left: 23px;
+				top: 15px;
+				left: 15px;
 				width: 16px;
 				height: 16px;
 			}
 		}
 		li.mars {
-			width: 280px;
-			height: 280px;
+			width: 215px;
+			height: 215px;
 			z-index: 96;
-			top: 180px;
-			left: 195px;
-			-webkit-animation-duration: 30s;
+			top: 213px;
+			left: 227px;
+			-webkit-animation-duration: 9.83s;
 
 			span {
 				background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.22, #d23f2f), color-stop(1, #943E0F) );
-				top: 31px;
-				left: 31px;
+				top: 21px;
+				left: 21px;
 				width: 18px;
 				height: 18px;
+			}
+		}
+		li.asteroid-belt {
+			width: 300px;
+			height: 300px;
+			top: 170px;
+			left: 187px;
+			background: url(../img/asteroids_meteorids.png) no-repeat;
+			background-size: cover;
+			border: none;
+			-webkit-animation-duration: 15s;
+			-webkit-filter: invert(65%);
+			span {
+				background: url(../img/asteroids_meteorids.png) no-repeat;
+				width: 280px;
+				background-size: cover;
+				height: 280px;
+				left: 10px;
+				top: 10px;
+				transform: scaleY(-1);
+				-webkit-filter: invert(65%);
 			}
 		}
 		li.jupiter {
@@ -168,7 +189,7 @@ to { -moz-transform: rotate(360deg) }
 			z-index: 95;
 			top: 150px;
 			left: 165px;
-			-webkit-animation-duration: 50s;
+			-webkit-animation-duration: 18.13s;
 
 			span {
 				background: -webkit-linear-gradient(#857E6C, #BDAE96, #D5D8E1, #9F9756, #D4CBBA, #BA833A, #8C8C8D);
@@ -184,7 +205,7 @@ to { -moz-transform: rotate(360deg) }
 			z-index: 94;
 			top: 120px;
 			left: 135px;
-			-webkit-animation-duration: 75s;
+			-webkit-animation-duration: 24.56s;
 
 			span {
 				top: 47px;
@@ -216,7 +237,7 @@ to { -moz-transform: rotate(360deg) }
 			z-index: 93;
 			top: 90px;
 			left: 105px;
-			-webkit-animation-duration: 100s;
+			-webkit-animation-duration: 34.82s;
 
 			span {
 				top: 57px;
@@ -232,7 +253,7 @@ to { -moz-transform: rotate(360deg) }
 			z-index: 92;
 			top: 60px;
 			left: 75px;
-			-webkit-animation-duration: 140s;
+			-webkit-animation-duration: 43.57s;
 
 			span {
 				top: 66px;
@@ -249,15 +270,20 @@ to { -moz-transform: rotate(360deg) }
     top: 20%;
     right: 15%;
     color: $text-color;
-    line-height: 1;
 
     h4 {
     	cursor: pointer;
+    	margin: 0px;
+    	text-align: center;
+    	padding: 10px;
+    }
+    h4:hover {
+    	color: chocolate;
     }
     h4:hover+p {
     	visibility: visible;
-    	opacity: 0.9;	
-    	transition: all 4.5s ease-in-out;
+    	opacity: 0.9;
+    	transition-delay: 0s;
     }
     p {
     	position: absolute;
@@ -271,6 +297,8 @@ to { -moz-transform: rotate(360deg) }
 	    background: #333;
 	    border-radius: 5px;
 	    z-index: 100;
+	    opacity: 0;
+	    transition: visibility 0s linear 0.5s, opacity 0.5s linear;
     	span {
     		display: block;
     		margin-bottom: 7px;
@@ -284,4 +312,3 @@ to { -moz-transform: rotate(360deg) }
     }
 	}
 }
-    	

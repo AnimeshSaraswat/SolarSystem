@@ -208,14 +208,18 @@ body {
     list-style-type: none;
     top: 20%;
     right: 15%;
-    color: #aaa;
-    line-height: 1; }
+    color: #aaa; }
     .ss-wrapper .description h4 {
-      cursor: pointer; }
+      cursor: pointer;
+      margin: 0px;
+      text-align: center;
+      padding: 10px; }
+    .ss-wrapper .description h4:hover {
+      color: chocolate; }
     .ss-wrapper .description h4:hover + p {
       visibility: visible;
       opacity: 0.9;
-      transition: all 4.5s ease-in-out; }
+      transition-delay: 0s; }
     .ss-wrapper .description p {
       position: absolute;
       visibility: hidden;
@@ -227,7 +231,9 @@ body {
       text-align: justify;
       background: #333;
       border-radius: 5px;
-      z-index: 100; }
+      z-index: 100;
+      opacity: 0;
+      transition: visibility 0s linear 0.5s, opacity 0.5s linear; }
       .ss-wrapper .description p span {
         display: block;
         margin-bottom: 7px; }
