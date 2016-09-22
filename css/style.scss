@@ -44,6 +44,15 @@ to { -moz-transform: rotate(360deg) }
 
 .ss-wrapper {
 	position: relative;
+
+	.header {
+		text-align: center;
+		color: #eed81b;
+		h1 {
+			font-size: 50px;
+			margin-bottom: 0px;
+		}
+	}
 	ul.solarsystem {
 		width: 960px;
 		margin: 0 auto;
@@ -267,7 +276,7 @@ to { -moz-transform: rotate(360deg) }
 	.description {
 		position: absolute;
     list-style-type: none;
-    top: 20%;
+    top: 25%;
     right: 15%;
     color: $text-color;
 
